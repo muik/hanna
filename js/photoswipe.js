@@ -245,7 +245,6 @@ function showWeddingGalleryScreen(index) {
 $(document).ready(function () {
   var win_ratio = 1.0 * $(window).width() / $(window).height();
   if (win_ratio > 1427.0/2000) {
-    console.log(win_ratio);
     $('#welcom').css({'background-image': 'images/welcome_bg_wide.jpg'});
   }
   
