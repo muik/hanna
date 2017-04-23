@@ -305,8 +305,25 @@ $(document).ready(function () {
   };
   adjust_jeju_gallery();
 
+  function adjust_video_height() {
+    if (typeof this._video == 'undefined') {
+      var v = $('#trailer iframe');
+      this._video = v;
+      this._w = 0;
+    }
+    var w = this._video.width();
+    if (w == this._w) {
+      return;
+    }
+    this._w = w;
+    var h = w * 315 / 560;
+    this._video.height(h);
+  }
+  adjust_video_height();
+
   $(window).resize(adjust_swiper_height);
   $(window).resize(adjust_jeju_gallery);
+  $(window).resize(adjust_video_height);
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
