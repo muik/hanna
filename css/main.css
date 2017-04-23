@@ -3,14 +3,6 @@
 	src: url('../fonts/DXPnM-KSCpc-EUC-H.woff2') format('woff2'), url('..t/fonts/DXPnM-KSCpc-EUC-H.woff') format('woff');
 }
 @font-face {
-	font-family: 'yeonaesidae';
-	src: url('../fonts/210-yeonaesidae-r.woff2') format('woff2'), url('../fonts/210-yeonaesidae-r.woff') format('woff');
-}
-@font-face {
-	font-family: 'yeonaesidae-bold';
-	src: url('../fonts/210-yeonaesidae-b.woff2') format('woff2'), url('../fonts/210-yeonaesidae-b.woff') format('woff');
-}
-@font-face {
 	font-family: 'allura2';
 	src: url('../fonts/allura-regular.woff2') format('woff2'), url('../fonts/allura-regular.woff') format('woff');
 }
@@ -180,7 +172,6 @@ a { color: black; }
 
 .title {
   padding: 0 1em;
-  font-family: 'yeonaesidae-bold';
   margin-bottom: 1em;
 }
 .title img {
@@ -188,14 +179,13 @@ a { color: black; }
 }
 .title h2 {
   color: black;
-  margin: 0;
+  margin: 0 0.2em;
   font-size: 1.3em;
   padding: 0.2em 0.2em 0;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-#about_us .title { font-family: 'yeonaesidae' }
 #about_us .title h2 {
   font-size: 1.25em;
 }
@@ -236,4 +226,35 @@ a { color: black; }
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.img_txt {
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+  background-position: center;
+}
+#getting_married h1 {
+  background-image: url('../images/txt_title.svg');
+  margin:2em 0.5em 1.2em;
+  font-size:1.35em;
+}
+#about_us h2 {
+  background-image: url('../images/txt_about_us.svg');
+  width: 8em;
+}
+#location h2 {
+  background-image: url('../images/txt_location.svg');
+  width: 4em;
+}
+#gallery .wedding h2 {
+  background-image: url('../images/txt_wedding_photo.svg');
+  width: 4em;
+}
+#gallery .jeju h2 {
+  background-image: url('../images/txt_jeju_photo.svg');
+  width: 4em;
+}
+#trailer h2 {
+  background-image: url('../images/txt_trailer.svg');
+  width: 4em;
 }
