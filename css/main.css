@@ -73,6 +73,19 @@ div.section strong { line-height: 500px; }
 #getting_married p {
   margin: 0.8em;
 }
+#getting_married .location {
+  display: inline-block;
+}
+#getting_married .location img {
+  max-width: 1.6em;
+}
+#getting_married .location span {
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: middle;
+  padding: 0 0.3em;
+}
 .flip {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
