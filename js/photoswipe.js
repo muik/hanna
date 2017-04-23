@@ -1,3 +1,10 @@
+/*
+$('#gallery .jeju .my-gallery img').each(function() {
+  var img = $(this);
+  img.attr('src', img.attr('src') + "?afwe=" + Math.random());
+});
+*/
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -292,7 +299,8 @@ $(document).ready(function () {
         el.height(item_h);
       }
       var img = $(el.find('img'));
-      var img_ratio = 1.0 * img.width() / img.height();
+      var size = $(el.find('a')).data('size').split('x');
+      var img_ratio = parseFloat(size[0]) / parseFloat(size[1]);
       if (img_ratio > el_ratio) {
         img.removeClass('portrait');
       } else {
@@ -311,6 +319,7 @@ $(document).ready(function () {
     $(this._items[6]).css({top: y * 2, left: x * 2});
   };
 
+  adjust_jeju_gallery();
   $('#gallery .jeju .my-gallery img').load(function() {
     adjust_jeju_gallery();
   });
