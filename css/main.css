@@ -79,19 +79,6 @@ div.section strong { line-height: 500px; }
 #getting_married p {
   margin: 0.8em;
 }
-#getting_married .location {
-  display: inline-block;
-}
-#getting_married .location img {
-  max-width: 1.6em;
-}
-#getting_married .location span {
-  display: inline-block;
-  height: 100%;
-  line-height: 100%;
-  vertical-align: middle;
-  padding: 0 0.3em;
-}
 .flip {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
@@ -207,10 +194,10 @@ a { color: black; }
 }
 #about_us { padding-left: 1em; padding-right: 1em;}
 #about_us p {margin-bottom: 1.2em;}
-#location2 .title img { max-width: 1.5em;max-height: 2em }
-#location2 .name {font-size:1.5em;margin-top:1em}
-#location2 .address {font-size:0.8em}
-#location2 .tel {border: 0}
+#location .title img { max-width: 1.5em;max-height: 2em }
+#location .name {font-size:1.5em;margin-top:1em}
+#location .address {font-size:0.8em}
+#location .tel {border: 0}
 #gallery .wedding .title img { max-width: 1em;max-height: 1.5em }
 #gallery .wedding .title img.left {
   -ms-transform: rotate(22deg) translateY(-0.5em);

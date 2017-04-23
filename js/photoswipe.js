@@ -311,7 +311,9 @@ $(document).ready(function () {
     $(this._items[6]).css({top: y * 2, left: x * 2});
   };
 
-  adjust_jeju_gallery();
+  $('#gallery .jeju .my-gallery img').load(function() {
+    adjust_jeju_gallery();
+  });
 
   $(window).resize(adjust_swiper_height);
   $(window).resize(adjust_jeju_gallery);
