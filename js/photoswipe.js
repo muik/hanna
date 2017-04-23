@@ -244,8 +244,12 @@ function showWeddingGalleryScreen(index) {
 
 $(document).ready(function () {
   var win_ratio = 1.0 * $(window).width() / $(window).height();
-  if (win_ratio > 1427.0/2000) {
-    $('#welcom').css({'background-image': 'images/welcome_bg_wide.jpg'});
+  if (win_ratio > 571.0 / 821) {
+    if ($(window).width() > 1024) {
+      $('#welcome').css('background-image', 'url(images/welcome_bg_high.jpg)');
+    } else {
+      $('#welcome').css('background-image', 'url(images/welcome_bg_wide.jpg)');
+    }
   }
   
   var swiper_wrapper = $('.swiper-wrapper');
