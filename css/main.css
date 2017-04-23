@@ -54,12 +54,6 @@ div.section strong { line-height: 500px; }
   min-height: 100%;
   height: 100%;
 }
-.vcenter2 {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
 
 .green-page {
   background-color:#E5F0E6;
@@ -193,7 +187,7 @@ a { color: black; }
   font-size: 1.25em;
 }
 #about_us { padding-left: 1em; padding-right: 1em;}
-#about_us p {margin-bottom: 1.2em;}
+#about_us p {margin-bottom: 1.2em;font-size:0.9em}
 #location .title img { max-width: 1.5em;max-height: 2em }
 #location .name {font-size:1.5em;margin-top:1em}
 #location .address {font-size:0.8em}
