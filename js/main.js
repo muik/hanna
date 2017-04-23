@@ -34,6 +34,7 @@ function setPhotoSwipeOptions(options) {
   options.zoomEl = true;
   options.arrowEl = true;
   options.bgOpacity = 0.85;
+	options.tapToToggleControls = false;
   //options.tapToClose = true;
 }
 
