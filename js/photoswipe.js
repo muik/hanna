@@ -5,6 +5,17 @@ $('#gallery .jeju .my-gallery img').each(function() {
 });
 */
 
+function setPhotoSwipeOptions(options) {
+  options.mainClass = 'pswp--minimal--dark';
+  options.captionEl = false;
+  options.fullscreenEl = false;
+  options.shareEl = false;
+  options.zoomEl = true;
+  options.arrowEl = true;
+  options.bgOpacity = 0.85;
+  //options.tapToClose = true;
+}
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -184,16 +195,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             return;
         }
 
-        // minimal style
-				options.mainClass = 'pswp--minimal--dark';
-				options.barsSize = {top:0,bottom:0};
-				options.captionEl = false;
-				options.fullscreenEl = false;
-				options.shareEl = false;
-				options.bgOpacity = 0.85;
-				options.tapToClose = true;
-				options.tapToToggleControls = false;
-				options.showHideOpacity = true;
+        setPhotoSwipeOptions(options);
+        options.showHideOpacity = true;
 
         if(disableAnimation) {
             options.showAnimationDuration = 0;
@@ -234,15 +237,7 @@ function showWeddingGalleryScreen(index) {
   var options = {
     index: index
   };
-  options.mainClass = 'pswp--minimal--dark';
-  options.barsSize = {top:0,bottom:0};
-  options.captionEl = false;
-  options.fullscreenEl = false;
-  options.shareEl = false;
-  options.bgOpacity = 0.85;
-  options.tapToClose = true;
-  options.tapToToggleControls = false;
-  options.showHideOpacity = true;
+  setPhotoSwipeOptions(options);
   var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
   gallery.init();
 }
